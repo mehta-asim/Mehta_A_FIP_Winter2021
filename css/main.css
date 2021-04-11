@@ -1,4 +1,771 @@
+/*fonts*/
+@font-face {
+font-family: 'Georgia Pro Cond Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('../assets/Georgia Pro Cond Semibold'), url('../assets/GeorgiaPro-CondSemiBold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Georgia Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('../assets/Georgia Pro Bold'), url('../assets/GeorgiaPro-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Georgia Pro Cond';
+font-style: normal;
+font-weight: normal;
+src: local('../assets/Georgia Pro Cond'), url('../assets/GeorgiaPro-CondRegular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Bilgate Font';
+    src: local('../assets/BilgateFont.woff2'), url('../assets/BilgateFont.woff2') format('woff2'),
+        local('../assets/BilgateFont.woff2'), url('../assets/BilgateFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*main-css-start*/
+
 .hidden
 {
 	display: none;
+}
+
+body
+{
+	font-family: Helvetica, Arial, sans-serif;
+
+}
+
+.container
+{
+	margin: 0 auto;
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #FFF4E3;
+}
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*Header*/
+header
+{
+	margin-top: 40px;
+}
+
+.navMenu
+{
+	display: none;
+}
+
+.navMenu ul
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.navMenu li a
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 21px;
+	color: #D62339;
+}
+
+.navMenu li:first-child {
+    border-top: 1px solid #243456;
+}
+
+.navMenu li {
+    border-bottom: 1px solid #243456;
+    padding: 5px 0 5px 0;
+}
+
+.navMenu ul li a:hover{
+		color: #222147;
+		transition: all .5s ease;
+	}
+#navButton
+{
+	background: url(../images/hamburger-menu.png) center no-repeat;
+    border: 0px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transform: rotate(-90deg);
+	  cursor: pointer;
+}
+
+.navMenu.slideToggle
+{
+	display: block;
+}
+
+#mainNav button.expanded
+{
+	transform: rotate(0deg);
+}
+
+.mainLogo img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 158px;
+	height: 62.98px;
+}
+
+/*Footer*/
+footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 40px;
+}
+#footerNav
+{
+	display: none;
+}
+.footerLogo 
+{
+	margin-bottom: 20px;
+	width: 158px;
+	height: 62.98px;
+}
+
+.footerLogo img
+{
+	/*display: block;*/
+	width: 158px;
+	height: 62.98px;
+}
+
+
+.mobileSocialMedia ul
+{
+	list-style-type: none;
+}
+
+.mobileSocialMedia ul li
+{
+	display: inline;
+}
+
+#twitter, #fb
+{
+	margin-left: 38px;
+}
+
+/*Home Page*/
+#homePromo
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #243456; 
+	flex: 1 1 auto;
+	align-items: center;
+}
+
+#homePromo img
+{
+	margin-bottom: 10px;
+}
+#homePromo h3
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 32px;
+	color: #FFF4E3;
+	margin-bottom: 10px;
+	/*text-align: center;*/
+}
+
+/*#homePromo h3, img, a, button
+{
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+#seeMore
+{
+	width: 110px;
+	height: 25px;
+	border-radius: 25px;
+	border: 3px solid #D62339;
+	background-color: #243456;
+	font-family: 'Georgia Pro Bold';
+	font-size: 12px;
+	color: #FFF4E3;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#promoText
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#promoText button{
+	transition: transform 0.2s;
+}
+#promoText button:hover
+{
+	transform: scale(1.05,1.05);
+	
+}
+#promoText form{
+	margin-left: 0px;
+}
+#history h3
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 32px;
+	color: #222147;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#history p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 18px;
+	color: #D62339;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+#history
+{
+	margin-left: 30px;
+	margin-right: 30px;
+	flex: 1 1 315px;
+	max-height: 270px;
+}
+
+#history img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	 width: 315px;
+	 height: 25.87px;
+}
+
+/*Products Page*/
+#product
+{
+	background-color: #243456;
+	margin-bottom: 20px;
+}
+
+#product img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+#productBottle
+{
+	width: 134px;
+	height: 206px;
+}
+#brandInfo
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px; 
+	margin-right: 20px;
+}
+
+#brandInfo p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 15px;
+	color: #C7931B;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#brandInfo img
+{
+	margin-right: 20px;
+}
+
+#productLogo
+{
+	width: 120.2px;
+	height: 120.2px;
+}
+/*Advertisement Page*/
+
+#advertisement
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#adSelection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+#static{
+	width: 160px;
+	height: 25px;
+	border-radius: 25px;
+	border: 3px solid #D62339;
+	background-color: #243456;
+	font-family: 'Georgia Pro Bold';
+	font-size: 18px;
+	color: #FFF4E3;
+	cursor: pointer;
+	text-align: center;
+	line-height: 21px;
+}
+
+#dynamic{
+	width: 160px;
+	height: 25px;
+	border-radius: 25px;
+	border: 3px solid #D62339;
+	background-color: #243456;
+	font-family: 'Georgia Pro Bold';
+	font-size: 18px;
+	color: #FFF4E3;
+	cursor: pointer;
+	text-align: center;
+	line-height: 22px;
+	margin-top: 20px;
+}
+
+#print{
+	display: none;
+}
+
+#infomercial{
+	display: none;
+}
+
+#infomercial video
+{
+	width: 336px;
+	height: 188px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #243456;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+.adBottle
+{
+	width: 335px;
+	height: 259px;
+}
+#ad1, #ad2, #ad3 , #ad4
+{
+	margin-bottom: 20px;
+}
+#ad1, #ad2, #ad3 , #ad4, #ad5
+{
+	background-color: #243456;
+	padding-top: 20px;
+	/*flex: 1 1 335px;
+	height: 520px;*/
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.adText
+{
+	font-family: 'Bilgate Font';
+	color: #FFF4E3;
+}
+
+#ad1 h4
+{
+	font-size: 119px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#ad2 h4
+{
+	font-size: 119px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#ad3 h4
+{
+	font-size: 79px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#ad4 h4
+{
+	font-size: 99px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#ad5 h4
+{
+	font-size: 111px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#ad1,#ad2,#ad3,#ad4,#ad5 p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 15px;
+	color: #C7931B;
+	text-align: center;
+}
+
+#ad1,#ad2,#ad3,#ad4,#ad5 img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ad5
+{
+	margin-bottom: 50px;
+}
+
+/*Contact Page*/
+#contactInfo
+{	padding-top: 10px;
+	background-color: #243456;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#contactInfo h3
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 32px;
+	color: #FFF4E3;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#contactInfo p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 15px;
+	color: #C7931B;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#address h5
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 20px;
+	color: #FFF4E3;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#address p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 15px;
+	color: #C7931B;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#phone h5
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 20px;
+	color: #FFF4E3;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#phone p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 15px;
+	color: #C7931B;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#mail h5
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 20px;
+	color: #FFF4E3;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#mail p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 15px;
+	color: #C7931B;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#contactPage img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+#contactRocksalt{
+	width: 315px;
+	height: 26.53px;
+}
+.getIn
+{
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 32px;
+	color: #222147;
+	text-align: left;
+	margin-bottom: 25px;
+	margin-left: 30px;
+
+}
+
+form
+{
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#name
+{
+	width: 178px;
+	height: 24px;
+	border-radius: 5px;
+	border: 1px solid #243456;
+	background-color: #FFF4E3;
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 15px;
+	color: #243456;
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 30px;
+}
+
+#email
+{
+	width: 178px;
+	height: 24px;
+	border-radius: 5px;
+	border: 1px solid #243456;
+	background-color: #FFF4E3;
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 15px;
+	color: #243456;
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	margin-right: 30px;
+}
+
+#message
+{
+	width: 315px;
+	height: 45px;
+	border-radius: 5px;
+	border: 1px solid #243456;
+	background-color: #FFF4E3;
+	font-family: 'Georgia Pro Cond Semibold';
+	font-size: 15px;
+	color: #243456;
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+}
+
+#send:hover
+{
+	transform: scale(1.05,1.05);
+	
+}
+#send
+{
+	width: 80px;
+	height: 23px;
+	border-radius: 25px;
+	border: 3px solid #243456;
+	font-family: 'Georgia Pro Bold';
+	font-size: 13px;
+	color: #FFF4E3;
+	text-align: left;
+	background-color: #D62339;
+	margin-left: auto;
+	margin-right: 15px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+/*About Us Page*/
+
+#aboutVideo{
+	margin-bottom: 30px;
+}
+
+#aboutVideo video
+{
+	width: 336px;
+	height: 188px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #243456;
+	border-radius: 5px;
+}
+
+#qualities
+{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#qualities img
+{
+	margin-bottom: 10px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 64px;
+	height: 64px;
+}
+
+#qualities h3
+{
+	font-family: 'Bilgate Font';
+	color: #FFF4E3;
+	font-size: 42px;
+	color: #D62339;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#qualities p
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 15px;
+	color: #C7931B;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+#ql1, #ql2, #ql3,#ql4{
+	opacity: 80%;
+}
+
+#ql1:hover, #ql2:hover, #ql3:hover, #ql4:hover{
+		opacity: 100%;
+		transition: opacity 0.5s ease;
+	}
+	
+#ql4 p
+{
+	margin-bottom: 40px;
+}
+#moreQuestions h2
+{
+	font-family: 'Georgia Pro Cond';
+	font-size: 30px;
+	color: #D62339;
+	text-align: center;
+	flex: 1 1 auto;
+	margin-bottom: 10px;
+}
+
+#contactus
+{
+	width: 190px;
+	height: 43px;
+	border: 3px solid #222147;
+	border-radius: 25px;
+	background-color: #D62339;
+	font-family: 'Georgia Pro Bold';
+	font-size: 21px;
+	color: #FFF4E3;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+#contactus:hover
+{
+	transform: scale(1.05,1.05);
+	
+}
+
+#moreQuestions button
+{
+	
+  	margin-bottom: 60px;
+}
+
+#moreQuestions{
+	margin-left: 30px;
+	margin-right: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+}
+
+#moreQuestions p{
+	display: none;
+}
+
+#moreQuestions form {
+	 margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	 display: inline;
 }
