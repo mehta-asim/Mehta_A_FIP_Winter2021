@@ -1,3 +1,10 @@
+/*.box
+{
+	flex: 1 1 200px;
+	flex-grow flex-shrink flex-basis
+}
+*/
+
 /*fonts*/
 @font-face {
 font-family: 'Georgia Pro Cond Semibold';
@@ -883,19 +890,19 @@ form
 		width: 745px;
 		height: 419px;
 	}
-			#homePromo h3, img, a, button
-		{
-			margin-left: 0;
-			margin-right: 0;
-		}
+	#homePromo h3, img, a, button
+{
+	margin-left: 0;
+	margin-right: 0;
+}
 
-		#promoText form {
-			 margin-right: auto;
-		    padding-left: 0px;
-		    padding-right: 0px;
-		    margin-top: 0px;
-		    margin-bottom: 0px;
-		}
+#promoText form {
+	 margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 	
 	#homePromo h3
 	{
