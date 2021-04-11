@@ -1,0 +1,37 @@
+HTML
+1. Create icons which show information on hover
+2. Create 2 button setup in which clicking a button will bring up relevant information and hide the information retrieved by the other button.
+3. Create social media buttons which will change color when hovered on
+
+CSS
+Style the icons and button to match with the color tone of the website
+set the base container vlaues for the button section to display:none
+
+JS
+1=>
+	create variable to hold the icons
+	create a 2-dimensional array to hold the information
+	fire an event listener with a mouseenter event and call the function to show the information
+	create a function to get the container id and initate variables to get hold of the child elements that need to be populated with the information
+	next using the variables and the container id and array populate the container with information
+
+	also fire an event listener with a mouseleave event and call another function so that the information should go away when hover over is off
+	this function will reset the child element values to none/empty
+
+
+2=>
+
+	create variables for the buttons and for the sections that need to be visible when they are clicked
+	add an event listener of click and call a function when either of the buttons are clicked
+	the function will be responsible for changing the display style property from none(base css property for the specific section will already be set to display:none) to inline
+	the function will also be responsible for chaning the display style property of the other section to none so at a time only the clicked button section is viewable
+
+	repeat the event listener and function for the 2nd button as well
+
+3=>
+
+	create variable to hold all icons
+	add an event listener of mouseenter event and call the function to change the src of image and thereby change the color
+	
+	also add an event listener of mouseleave event and call function to reset the src of image to original one
+																																																																																																																			
