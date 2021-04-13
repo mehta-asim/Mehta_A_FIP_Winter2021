@@ -47,6 +47,7 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
+
 ## About The Project
 
 This project is about showcasing the mixture of 2 brands Erdinger Weisbier's Design and Windsor Safe-T-Salt's Content.
