@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href=".https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/">
+  <a href="https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/">
     <img src="images/logo-label-final.svg" alt="Logo" width="500" height="500">
   </a>
 
@@ -10,14 +10,14 @@
   <p align="center">
     We make rocksalt!
     <br />
-    <a href=".https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href=".https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/">View Demo</a>
+    <a href="https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/">View Demo</a>
     ·
-    <a href=".https://github.com/mehta-asim/Mehta_A_FIP_Winter2021//issues">Report Bug</a>
+    <a href="https://github.com/mehta-asim/Mehta_A_FIP_Winter2021//issues">Report Bug</a>
     ·
-    <a href=".https://github.com/mehta-asim/Mehta_A_FIP_Winter2021//issues">Request Feature</a>
+    <a href="https://github.com/mehta-asim/Mehta_A_FIP_Winter2021//issues">Request Feature</a>
   </p>
 </p>
 
@@ -99,7 +99,7 @@ _For more literature, please refer to the [Documentation](https://www.w3schools.
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](.https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/issues) for a list of proposed features (and known issues).
 
 <!-- LICENSE -->
 ## License
@@ -109,5 +109,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 Asim Mehta<br>
-Project Link: [.https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/](.https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/)
+Project Link: [https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/](https://github.com/mehta-asim/Mehta_A_FIP_Winter2021/)
 
